@@ -27,7 +27,7 @@ Batangas State University, Alangilan Campus
 
 ---
 
-## 💡 What we learned
+## 💡 What I Learned
 
 ### **Chapter 1_2_3**
 In these chapters, I learned how to upload and load a dataset, understand its data types, and clean it before using it for analysis or machine learning. I learned that raw data can have missing, inconsistent, or irrelevant information. And also, I learned how to handle it. What surprised me was that I need to upload the dataset first before running the code because it can cause an error if the data is not available. This helped me realize that data preparation isn't just about writing code, but also about properly setting up and organizing your files before doing any actual analysis.
@@ -36,23 +36,23 @@ In these chapters, I learned how to upload and load a dataset, understand its da
 In this chapter, I learned that feature engineering is about creating new features to make the data more useful. I learned about binning, interaction features, polynomial features, and encoding categorical data using one-hot and ordinal encoding. What surprised me was that we can create new information from existing data, such as Lemonade per Degree, to better understand relationships in the dataset. 
 
 ### **Chapter 5**
-
+In Chapter 5, I learned that variables measured on totally different scales need to be rebalanced so the algorithm evaluates both fairly. What surprised me was how unscaled data can trick an algorithm into prioritizing a feature simply because its numbers are bigger, not because it actually matters more. In short, scaling balances all variables so predictions are based on true relationships rather than raw numerical sizes.
 
 ### **Chapter 6**
-
+In this chapter, I learned that outliers are values that are very different from most of the data and can affect the results of an analysis. I learned how Z-score and IQR can be used to find these unusual values and how they can be handled properly. What surprised me was that an outlier should not always be removed because it may still represent important information.
 
 ### **Chapter 7**
-
+In Chapter 7, I learned that feature selection removes useless variables so a model can focus only on what actually helps make predictions. What surprised me was that we can do this in different ways, like using statistical scores to filter them out beforehand, testing groups of variables using wrapper methods, or letting model algorithms like Lasso drop weak features on their own during training. In the end, I realized that feeding a model more data isn't always better, and trimming unnecessary features actually makes predictions sharper.
 
 ### **Chapter 8**
-
+In this chapter, I learned how a preprocessing pipeline combines different steps, such as filling missing values and scaling data, into one process. I understood that this makes data preparation more organized and consistent. What surprised me was how pipelines prevent human mistakes and data leakage by applying the exact same transformations to both training and test data. In short, they keep machine learning projects organized, consistent, and easy to run. In addition to this, I also learned that if the dataset does not match what the code needs, the code may not work properly because some required columns or data are missing.
 
 ### **Chapter 9**
-
+In this chapter, I learned how different preprocessing techniques can be combined to prepare a real dataset for analysis. I understood how to handle missing values, scale numerical data, encode categorical data, and use visualizations to better understand the processed data. What surprised me was how the plots made it easier to see patterns and differences in the data.
 
 ---
 
-## ⚠️ Errors we found
+## ⚠️ Errors I Found
 
 List any mistake you found in the original notebooks, and the correct version.
 There are real ones in there. Finding them earns points.
