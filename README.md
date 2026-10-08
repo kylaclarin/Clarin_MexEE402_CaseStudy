@@ -11,6 +11,7 @@ Batangas State University, Alangilan Campus
 |---|---|---|
 | Clarin, Kyla Nicole F. | 20-03458 | MEXE - 4103 |
 
+---
 
 ## 🔗 Notebook links
 
@@ -24,20 +25,46 @@ Batangas State University, Alangilan Campus
 | Ch8 | [link](https://colab.research.google.com/drive/1pmeJ0tR5Q0fK8GbyCAy3hwwB8ShBl_if?usp=sharing) | 
 | Ch9 | [link](https://colab.research.google.com/drive/1vMq9GEGmao1JurCf3fZoZ8UpjlX6MaSA?usp=sharing) | 
 
+---
+
 ## 💡 What we learned
 
-One short paragraph per chapter, Ch1_2_3 to Ch9. Say what the chapter taught
-you and what surprised you. Not what the library does, but what you understood.
+### **Chapter 1_2_3**
+In these chapters, I learned how to upload and load a dataset, understand its data types, and clean it before using it for analysis or machine learning. I learned that raw data can have missing, inconsistent, or irrelevant information. And also, I learned how to handle it. What surprised me was that I need to upload the dataset first before running the code because it can cause an error if the data is not available. This helped me realize that data preparation isn't just about writing code, but also about properly setting up and organizing your files before doing any actual analysis.
+
+### **Chapter 4**
+In this chapter, I learned that feature engineering is about creating new features to make the data more useful. I learned about binning, interaction features, polynomial features, and encoding categorical data using one-hot and ordinal encoding. What surprised me was that we can create new information from existing data, such as Lemonade per Degree, to better understand relationships in the dataset. 
+
+### **Chapter 5**
+
+
+### **Chapter 6**
+
+
+### **Chapter 7**
+
+
+### **Chapter 8**
+
+
+### **Chapter 9**
+
+
+---
 
 ## ⚠️ Errors we found
 
 List any mistake you found in the original notebooks, and the correct version.
 There are real ones in there. Finding them earns points.
 
+---
+
 ## 📝 Note on AI tools
 
 Say whether you used an AI tool, and what for. This is not a penalty.
 Hiding it is.
+
+---
 
 ## 📚 References
 
