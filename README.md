@@ -17,13 +17,13 @@ Batangas State University, Alangilan Campus
 
 | Chapter | Member 1 | 
 |---|---|
-| Ch1_2_3 | [link](https://colab.research.google.com/drive/1UGICAYhnft6JnNV05ayw_6qMChwekXDd?usp=sharing) | 
-| Ch4 | [link](https://colab.research.google.com/drive/1iYa9tG_nkVzHZ5HSYQOFIlvqqwsANosu?usp=sharing) | 
-| Ch5 | [link](https://colab.research.google.com/drive/1W4TFxFUmmYx4KId1ja45wLgRxZuiaQ5J?usp=sharing) | 
-| Ch6 | [link](https://colab.research.google.com/drive/13qk_PptArr0kkWq0CM7OScsGTJFUZADy?usp=sharing) | 
-| Ch7 | [link](https://colab.research.google.com/drive/1qh6WhXX4XqtOss2srGZWlPJUr2OTzlpN?usp=sharing) | 
-| Ch8 | [link](https://colab.research.google.com/drive/1pmeJ0tR5Q0fK8GbyCAy3hwwB8ShBl_if?usp=sharing) | 
-| Ch9 | [link](https://colab.research.google.com/drive/1vMq9GEGmao1JurCf3fZoZ8UpjlX6MaSA?usp=sharing) | 
+| Ch1_2_3 | [https://colab.research.google.com/drive/1UGICAYhnft6JnNV05ayw_6qMChwekXDd?usp=sharing]() | 
+| Ch4 | [https://colab.research.google.com/drive/1iYa9tG_nkVzHZ5HSYQOFIlvqqwsANosu?usp=sharing]() | 
+| Ch5 | [https://colab.research.google.com/drive/1W4TFxFUmmYx4KId1ja45wLgRxZuiaQ5J?usp=sharing]() | 
+| Ch6 | [https://colab.research.google.com/drive/13qk_PptArr0kkWq0CM7OScsGTJFUZADy?usp=sharing]() | 
+| Ch7 | [https://colab.research.google.com/drive/1qh6WhXX4XqtOss2srGZWlPJUr2OTzlpN?usp=sharing]() | 
+| Ch8 | [https://colab.research.google.com/drive/1pmeJ0tR5Q0fK8GbyCAy3hwwB8ShBl_if?usp=sharing]() | 
+| Ch9 | [https://colab.research.google.com/drive/1vMq9GEGmao1JurCf3fZoZ8UpjlX6MaSA?usp=sharing]() | 
 
 ---
 
@@ -54,20 +54,38 @@ In this chapter, I learned how different preprocessing techniques can be combine
 
 ## ⚠️ Errors I Found
 
-List any mistake you found in the original notebooks, and the correct version.
-There are real ones in there. Finding them earns points.
+**ERROR:** Chapter 6
+
+**Mistake:** I noticed that the Z-score method did not detect 100 as an outlier, while the IQR method identified it as an outlier. This may cause confusion because both methods are used to detect outliers. The Z-score method did not detect it because its Z-score was only 2.615, which is within the stated cutoff of -3 to 3.
+
+**Correction:** The results do not necessarily need to be the same because the two methods use different criteria. That is why 100 was not detected as an outlier using the Z-score method but was identified as an outlier using the IQR method. The existing Z-score code is correct based on the cutoff used, so no code correction is necessary.
+
+However, if the goal is to make the Z-score method also identify 100 as an outlier, the cutoff can be changed from 3 to 2.5.
+
+**Original Code:**
+
+outliers = data[np.abs(z_scores) > 3]
+
+**Corrected Code (if using a cutoff of 2.5):**
+
+outliers = data[np.abs(z_scores) > 2.5]
+
+Changing the cutoff to 2.5 will allow the Z-score method to detect 100 as an outlier because its Z-score of 2.615 is greater than 2.5. 
 
 ---
 
 ## 📝 Note on AI tools
 
-Say whether you used an AI tool, and what for. This is not a penalty.
-Hiding it is.
+I used ChatGPT to help me understand the error I found in Chapter 6. I asked if it was possible for the Z-score and IQR methods to produce different results in detecting outliers. It helped me understand why the Z-score method did not identify 100 as an outlier while the IQR method did, and what changes could be made to the cutoff if I wanted both methods to identify it.
 
 ---
 
 ## 📚 References
 
 McKinney, W. (2021). Python for Data Analysis, 3rd ed. O'Reilly.
+
 VanderPlas, J. Python Data Science Handbook.
-Any other page or article you used.
+
+GregorySmith. (n.d.). Video Game Sales. Kaggle. [https://www.kaggle.com/datasets/gregorut/videogamesales]()
+
+Anakha, A. S. (n.d.). Titanic Dataset. Kaggle. [https://www.kaggle.com/datasets/anakha27/titanic-dataset]()
